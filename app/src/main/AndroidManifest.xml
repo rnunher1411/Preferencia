@@ -21,6 +21,9 @@
         android:theme="@style/Theme.ProyectoCamara"
         tools:targetApi="31">
         <activity
+            android:name=".galeria"
+            android:exported="false" />
+        <activity
             android:name=".activity_visor_camara"
             android:exported="false" />
         <activity

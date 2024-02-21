@@ -21,4 +21,10 @@
         android:layout_alignParentBottom="true"
         android:src="@android:drawable/ic_menu_camera"/>
 
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visor camara"/>
+
 </RelativeLayout>

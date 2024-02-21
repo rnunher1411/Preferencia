@@ -19,6 +19,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -39,6 +40,19 @@ public class CamaraActivity extends AppCompatActivity {
                 pedirPermisos();
             }
         });
+
+        Button boton2 = findViewById(R.id.boton);
+
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                final Intent intent = new Intent(CamaraActivity.this, activity_visor_camara.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 
@@ -136,5 +150,7 @@ public class CamaraActivity extends AppCompatActivity {
         }
 
     }
+
+
 
 }

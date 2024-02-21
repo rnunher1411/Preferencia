@@ -11,13 +11,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Hacer captura" />
+        android:layout_centerHorizontal="true">
 
+        <Button
+            android:id="@+id/botonCaptura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hacer captura" />
+
+        <Button
+            android:id="@+id/botonGaleria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver capturas" />
+
+    </LinearLayout>
 
 
 </RelativeLayout>
